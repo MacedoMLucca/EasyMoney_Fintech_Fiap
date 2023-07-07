@@ -1,39 +1,21 @@
-// ideia pro login
-function trocarItem() {
-  // Obtenha o elemento que deseja trocar
-  var elemento = document.getElementById('item');
-
-  // Defina o novo conteúdo
-  elemento.innerHTML = 'Novo conteúdo';
-}
-function voltarItem() {
-  // Obtenha o elemento que deseja trocar
-  var elemento = document.getElementById('item');
-
-  // Defina o novo conteúdo
-  elemento.innerHTML = 'Conteúdo original';
+function funcao_nao_disponivel() {
+  alert('Em Breve');
 }
 
-// menu
-function toggleMenu() {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('aberto');
+function esquciSenha(){
+  var email = prompt('Digite seu email, para refazer a senha!')
+  setTimeout(function() {
+    alert('email enviado para "'+email+'" com sucesso!')
+  }, 1000);
+}
+
+function validarCampos(){
+  var email = document.getElementById("btn-email").value;
+  var pass = document.getElementById("btn-pw").value;
+  
+  if (pass === "" || email === "") {
+    alert("Por favor, preencha todos os campos.");
+    return false;
   }
-
-
-// var conteudoOriginal; // Variável para armazenar o conteúdo original
-
-// function trocarItem() {
-// var elemento = document.getElementById('item');
-
-// if (!conteudoOriginal) {
-// // Armazena o conteúdo original na primeira troca
-// conteudoOriginal = elemento.innerHTML;
-// elemento.innerHTML = 'Novo conteúdo';
-// } else {
-// // Restaura o conteúdo original
-// elemento.innerHTML = conteudoOriginal;
-// conteudoOriginal = null; // Reseta a variável de conteúdo original
-// }
-// }
-
+  return true
+}

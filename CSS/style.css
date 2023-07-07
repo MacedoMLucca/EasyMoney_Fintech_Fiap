@@ -102,12 +102,14 @@ article .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 article .card img{
     height: 50%;
     width: 100%;
 }
 article .card{
+    margin:5px;
     background-color: var(--backgrond);
     border: 10px solid #c0c0c0;
 }
@@ -149,7 +151,7 @@ article .criar-conta-article{
     align-items: center;
     border: none;
 }
-article .criar-conta-article:hover{
+article a .criar-conta-article:hover{
     color: var(--white);
 }
 article .entrar-article{
@@ -163,7 +165,7 @@ article .entrar-article{
     align-items: center;
     border: none;
 }
-article .entrar-article:hover{
+article a .entrar-article:hover{
     color: var(--white);
 }
 .footer{
@@ -178,4 +180,107 @@ article .entrar-article:hover{
 .footer img{
     width: 30%;
     margin-right: 5%;
+}
+
+/* ===== */
+/* LOGIN */
+/* ===== */
+.footer-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.quadro-login{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 62vh;
+    margin: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.img-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 50%;
+    border: 10% 50% 100% 23%;
+}
+.img-logo img{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+.input-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+
+.input-login img{
+    width: 15%;
+    height: auto;
+    margin-bottom: 4%;
+}
+.input-login h2{
+    font-size: 50px;
+    border-bottom:2px solid var(--primary-color);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+form .campos{
+    margin-top: 2%;
+    width: 60%;
+}
+form h6{
+    font-size: 12px;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:10%;
+    gap:10px
+}
+.botoes .btn-entrar{
+    background-color: var(--secundary-color);
+    color: var(--white);
+}
+.botoes .btn-entrar:hover{
+    background-color: var(--backgrond);
+    color: var(--primary-color);
+    border:1px solid var(--primary-color);
+}
+.input-login input{
+    width: 100%;
+}
+.botoes .btn-voltar{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.botoes .btn-voltar:hover{
+    background-color: var(--backgrond);
+    color: var(--primary-color);
+    border:1px solid var(--primary-color);
+}
+.esqueci button{
+    border: none;
+    background-color: var(--backgrond);
+    color: var(--white);
+}
+.esqueci button:hover{
+    color: var(--primary-color);
 }

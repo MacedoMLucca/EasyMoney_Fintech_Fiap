@@ -31,26 +31,22 @@
                 <div class="menu-logo">
                     <img src="IMG/logo-easyMoney.png" alt="Logo da Easy Money" class="img-logo-menu" />
                 </div>
-
-
-                <!-- <button onclick="toggleMenu()">Abrir Menu</button> -->
-
                 <div class="servicos">
                     <a href="#servicos">SERVIÇOS</a>
                     <span class="span-menu">|</span>
-                    <a href="paginas/criar_conta.html">CRIAR CONTA</a>
+                    <a href="paginas/login.html">LOGIN</a>
                     <div class="perfil">
                         <li class="nav-item dropdown">
                             <img width="48" height="48" src="IMG/icones/icons8-usuário-homem-com-círculo-64 (1).png"
                                 alt="user-male-circle" class="nav-link dropdown-toggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" />
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="paginas/login.html">LOGIN</a></li>
-                                <li><a class="dropdown-item" href="paginas/em_andamento.html">SAIBA MAIS</a></li>
+                                <li><a class="dropdown-item"  href="index.html" onclick="funcao_nao_disponivel()">CRIAR CONTA</a></li>
+                                <li><a class="dropdown-item" href="index.html" onclick="funcao_nao_disponivel()">SAIBA MAIS</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="paginas/em_andamento.html">SAIR</a></li>
+                                <li><a class="dropdown-item" href="index.html" onclick="funcao_nao_disponivel()">SAIR</a></li>
                             </ul>
                         </li>
                     </div>
@@ -131,7 +127,7 @@
                         <h5 class="card-title">GANHOS E ENTRADAS</h5>
                         <p class="card-text">Anote seu ganhos e organize sua vida financeira,sem passar sufoco com nosso
                             aplicativo.</p>
-                        <a href="paginas/em_andamento.html" class="btn btn-saiba">SAÍBA MAIS</a>
+                        <a href="index.html" onclick="funcao_nao_disponivel()" class="btn btn-saiba">SAÍBA MAIS</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -140,7 +136,7 @@
                         <h5 class="card-title">METAS</h5>
                         <p class="card-text">Estabeleça suas metas de forma facil no nosso aplicativo e atinja elas de
                             forma mais tranquila.</p>
-                        <a href="paginas/em_andamento.html" class="btn btn-saiba">SAÍBA MAIS</a>
+                        <a href="index.html" onclick="funcao_nao_disponivel()" class="btn btn-saiba">SAÍBA MAIS</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -149,7 +145,7 @@
                         <h5 class="card-title">INVESTIMENTOS</h5>
                         <p class="card-text">Anote seus investimentos de forma facil,tenha seus registros e
                             movimentações sempre na palma da mão.</p>
-                        <a href="paginas/em_andamento.html" class="btn btn-saiba">SAÍBA MAIS</a>
+                        <a href="index.html" onclick="funcao_nao_disponivel()" class="btn btn-saiba">SAÍBA MAIS</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -158,19 +154,19 @@
                         <h5 class="card-title">GASTOS E SAÍDAS</h5>
                         <p class="card-text">Organize sua vida financeira controlando seus gastos e anotando suas
                             saídas.</p>
-                        <a href="paginas/em_andamento.html" class="btn btn-saiba">SAÍBA MAIS</a>
+                        <a href="index.html" onclick="funcao_nao_disponivel()" class="btn btn-saiba">SAÍBA MAIS</a>
                     </div>
                 </div>
             </div>
             <div class="login-cadastro">
                 <button type="button" class="criar-conta-article">
                     <div>
-                        <h4>CRIAR CONTA</h4>
+                        <a href="index.html" onclick="funcao_nao_disponivel()"><h4>CRIAR CONTA</h4></a>
                     </div>
                 </button>
                 <button type="button" class="entrar-article">
                     <div>
-                        <h4>ENTRAR</h4>
+                        <a href="paginas/login.html"><h4>ENTRAR</h4></a>
                     </div>
                 </button>
             </div>
@@ -189,15 +185,6 @@
 
         </div>
     </footer>
-    <div id="item">Conteúdo original</div>
-    <button onclick="trocarItem()">Trocar</button>
-    <div id="item">Conteúdo outro</div>
-    <button onclick="voltarItem()">Trocar</button>
-
-
-
-
-
 </body>
 
 </html>
